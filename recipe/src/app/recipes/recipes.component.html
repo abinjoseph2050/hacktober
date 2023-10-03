@@ -14,4 +14,10 @@
       <p style="color: red;">Please Select a recipe</p>
     </ng-template>
   </div>
+    <div class="col-md-7">
+    <app-recipe-detail [recipe]="new Recepie" *ngIf="selectedRecipe; else infoText"></app-recipe-detail>
+    <ng-template #infoText>
+      <p style="color: red;">Please Select a recipe</p>
+    </ng-template>
+  </div>
 </div>
